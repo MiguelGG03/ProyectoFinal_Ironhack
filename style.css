@@ -29,3 +29,15 @@ section{
   border-radius: 5px;
   align-items: center;;
 }
+
+.empezar-boton{
+    background-color: #a56d1a;
+    color: #eee;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    border: 0;
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+    transition: 0.3s all;
+}
