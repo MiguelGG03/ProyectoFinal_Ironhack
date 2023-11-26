@@ -1,4 +1,4 @@
-import {emojiBanders} from './emojiBanderas.js';
+import {emojiBanderas} from './emojiBanderas.js';
 import {mezclarArray} from '-/extras/mezclarArray.js';
 
 /*
@@ -43,6 +43,26 @@ function reiniciarJuego() {
 }
 
 function crearTabla() {
+    const arrayRandom = crearArrayAleatorioDesdeOtro(emojiBanderas);
+    const arrayAleatorioConDuplicados = [...arrayRandom, ...arrayRandom];
+    /* ...arrayRandom es para descomponer los elementos del array */
+
+    const arrayMezclado = mezclarArray(arrayAleatorioConDuplicados);
+    /*Mezcla el array*/
+
+    arrayMezclado.forEach((emoji) => {
+        const casilla = crearCasilla(emoji);
+        fragmento.append(casilla);
+    });
+
+    tabla.append(fragmento);
+}
+
+function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
+    null;
+}
+
+function crearCasilla(emoji) {
     null;
 }
 
@@ -54,9 +74,7 @@ function match() {
     null;
 }
 
-function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
-    null;
-}
+
 
 function actualizarContadorPuntuacion(puntuacion){
     elementoPuntuacion.textContent = puntuacionContador+=puntuacion;
