@@ -29,7 +29,17 @@ function iniciarJuego() {
 }
 
 function reiniciarJuego() {
-    null;
+    tabla.innerHTML = '';
+    /*Reinicia la tabla*/
+    clearInterval(intervaloTiempo);
+    /*Reinicia el temporizador*/
+    tiempoTotal = 0;
+    elementoTiempo.textContent = tiempoTotal;
+    puntuacionContador = 0;
+    elementoPuntuacion.textContent = puntuacionContador;
+    /*Reinicia el contador de puntuación*/
+    finalizarVisualizacion.classList.add('hide');
+    /*Oculta el mensaje de finalización*/
 }
 
 function crearTabla() {
