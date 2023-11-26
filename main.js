@@ -22,5 +22,37 @@ empezarBoton.addEventListener('click', /*Aqui va la funcion para empezar*/);
 tabla.addEventListener('click', /*Aqui va la funcion para girar las casillas*/);
 
 function iniciarJuego() {
+    reiniciarJuego();
+    crearTabla();
+    intervaloTiempo = setInterval(actualizarTiempo , 1000);
+    /*establece un temporizador para llamar a la función actualizarTiempo cada segundo. */
+}
+
+function reiniciarJuego() {
     null;
+}
+
+function crearTabla() {
+    null;
+}
+
+function girarCasilla() {
+    null;
+}
+
+function match() {
+    null;
+}
+
+function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
+    null;
+}
+
+function actualizarContadorPuntuacion(puntuacion){
+    elementoPuntuacion.textContent = puntuacionContador+=puntuacion;
+}
+
+function actualizarTiempo(){
+    tiempoTotal++;
+    elementoTiempo.textContent = tiempoTotal;
 }
