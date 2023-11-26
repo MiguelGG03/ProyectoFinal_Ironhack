@@ -8,6 +8,8 @@ export function mezclarArray(array) {
         const elementoAleatorio = array[indiceAleatorio];
         array[indiceAleatorio] = array[i];
         array[i] = elementoAleatorio
+        // elemento aleatorio es el elemento que está en la posición aleatoria
+        // array[i] es el elemento que está en la posición i
     }
 
 }
