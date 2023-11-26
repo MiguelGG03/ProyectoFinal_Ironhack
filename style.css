@@ -53,3 +53,10 @@ section{
     gap: 4rem;
     /* Establece un espacio de 4rem entre los elementos flexibles */
 }
+
+.elemento__tabla-puntuacion{
+    display:flex;
+    gap: 2rem;
+    font-size: 1.25rem;
+    color: #eee;
+}
