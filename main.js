@@ -93,7 +93,7 @@ function girarCasilla(evento) {
 }
 
 function finalizarSiNoCoincide() {
-
+    const numeroDeMatches = board.querySelectorAll('.match').length;
 }
 
 function revisarCoincidencia() {
