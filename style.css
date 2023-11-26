@@ -76,7 +76,7 @@ section{
 
 .casilla {
     position: relative;
-    cursor: pointer;
+    cursor: pointer; /*se utiliza para cambiar la apariencia del cursor cuando está sobre un elemento interactivo*/
     width: auto;
     height: 150px;
     border-radius: 5px;
