@@ -20,3 +20,7 @@ let intervaloTiempo = null;
 
 empezarBoton.addEventListener('click', /*Aqui va la funcion para empezar*/);
 tabla.addEventListener('click', /*Aqui va la funcion para girar las casillas*/);
+
+function iniciarJuego() {
+    null;
+}
