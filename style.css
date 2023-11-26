@@ -6,7 +6,7 @@
 main{
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to left , rgba(18, 181, 53, 0.5), rgba(0, 149, 255, 0.5)0.5);
+    background: linear-gradient(to left , rgba(18, 181, 53, 0.5), rgba(0, 149, 255, 0.5));
     /* linear-gradient crea un degradado lineal, e to left es para especificar
     la dirección del degradado */
 }
@@ -60,3 +60,4 @@ section{
     font-size: 1.25rem;
     color: #eee;
 }
+
