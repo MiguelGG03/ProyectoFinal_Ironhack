@@ -31,7 +31,7 @@ section{
 }
 
 .empezar-boton{
-    background-color: #a56d1a;
+    background-color: #641aa5;
     color: #eee;
     border-radius: 5px;
     padding: 1rem 2rem;
@@ -43,7 +43,7 @@ section{
 }
 
 .empezar-boton:hover{
-    background-color: #c98e2e;
+    background-color: #9b33f6;
     /*:hover se utiliza para aplicar estilos a un elemento cuando el usuario
      pasa el cursor sobre él*/
 }
