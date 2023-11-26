@@ -44,5 +44,7 @@ section{
 
 .empezar-boton:hover{
     background-color: #c98e2e;
+    /*:hover se utiliza para aplicar estilos a un elemento cuando el usuario
+     pasa el cursor sobre él*/
 }
 
