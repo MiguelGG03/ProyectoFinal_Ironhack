@@ -3,9 +3,11 @@
 export function mezclarArray(array) {
     for(let i = array.length - 1; i > 0 ; i--) {
         const indiceAleatorio = Math.floor(Math.random() * (i + 1));
+        // Math.floor redondea hacia abajo para tener un número entero
+        // Math.random() * (i + 1) me da un número entre 0 y i
         const elementoAleatorio = array[indiceAleatorio];
         array[indiceAleatorio] = array[i];
         array[i] = elementoAleatorio
     }
-    
+
 }
