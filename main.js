@@ -72,13 +72,34 @@ function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
     return arrayAleatorio;
 }
 
-function crearCasilla(emoji) {
+function crearCasilla({id , emoji}) {
+    const casilla = plantilla.content.cloneNode(true);
+    casilla.querySelector('.casilla').dataset.identity = id;
+    casilla.querySelector('.casilla__vuelta').textContent = emoji;
+    return casilla;
+}
+
+function girarCasilla(evento) {
+    const casilla = evento.target.closest('.casilla');
+    if (casilla && casillasGiradas.length < 2 && !card.classList.contains('girada')){
+        casilla.classList.add('girada');
+        casillasGiradas.push(casilla);
+
+        if (casillasGiradas.length === 2) {
+            revisarCoincidencia();
+            finalizarSiNoCoincide();
+        }
+    }
+}
+
+function finalizarSiNoCoincide() {
+
+}
+
+function revisarCoincidencia() {
     null;
 }
 
-function girarCasilla() {
-    null;
-}
 
 function match() {
     null;
