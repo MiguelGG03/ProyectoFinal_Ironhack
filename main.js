@@ -17,3 +17,6 @@ const casillasGiradas = [];
 let puntuacionContador = 0;
 let tiempoTotal = 0;
 let intervaloTiempo = null;
+
+empezarBoton.addEventListener('click', /*Aqui va la funcion para empezar*/);
+tabla.addEventListener('click', /*Aqui va la funcion para girar las casillas*/);
