@@ -73,3 +73,17 @@ section{
     position: relative;
     min-height: 770px;
 }
+
+.casilla {
+    position: relative;
+    cursor: pointer;
+    width: auto;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    /*-webkit- se usa para navegadores que utilizan el motor de renderizado WebKit (como Google Chrome y Safari)*/
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+    /*se utiliza para proporcionar un efecto de rebote al elemento al entrar en la pantalla*/
+    /*el both se utiliza para que sea tanto al principio como al final del estado*/
+}
