@@ -110,3 +110,11 @@ section{
     user-select: none;
     /*user-select: none; se utiliza para que el usuario no pueda seleccionar el texto*/
 }
+
+.casilla.girada .casilla__frente {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.casilla.girada .casilla__vuelta {
+    transform: rotateY(0deg) rotateZ(0);
+}
