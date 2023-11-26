@@ -1,1 +1,6 @@
-export const emojiBanders = [];
+export const emojiBanders = [
+    {
+        id:"flag_1",
+        emoticono:"🇪🇸",
+    }
+];
