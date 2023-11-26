@@ -12,3 +12,8 @@ const tabla = document.querySelector('.tabla');
 const elementoPuntuacion = document.querySelector('.elemento__tabla-puntuacion');
 const elementoTiempo = document.querySelector('.elemento__tabla-tiempo');
 const finalizarVisualizacion = document.querySelector('.finalizar-visualizacion');
+
+const casillasGiradas = [];
+let puntuacionContador = 0;
+let tiempoTotal = 0;
+let intervaloTiempo = null;
