@@ -48,3 +48,8 @@ section{
      pasa el cursor sobre él*/
 }
 
+.tabla-puntuacion {
+    display: flex;
+    gap: 4rem;
+    /* Establece un espacio de 4rem entre los elementos flexibles */
+}
