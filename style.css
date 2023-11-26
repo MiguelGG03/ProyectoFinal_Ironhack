@@ -10,3 +10,6 @@ main{
     /* linear-gradient crea un degradado lineal, e to left es para especificar
     la dirección del degradado */
 }
+section{
+    padding: 2rem 0;
+}
