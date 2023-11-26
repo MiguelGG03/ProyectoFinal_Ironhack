@@ -61,3 +61,15 @@ section{
     color: #eee;
 }
 
+.tabla {
+    display: grid; /* Establece un grid (comportamiento de cuadrícula) */
+    grid-template-columns: repeat(4, auto); 
+    /*4 columnas que se ajustan automaticamente al espacio que hay*/
+    grid-gap: 2rem; /* Establece un espacio de 2rem entre los elementos del grid */
+    padding: 2rem 1rem;
+    border:3px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 770px;
+}
