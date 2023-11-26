@@ -59,7 +59,17 @@ function crearTabla() {
 }
 
 function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
-    null;
+    const arrayClonado = [...arrayACopiar];
+    const arrayAleatorio = [];
+
+    for (let i = 0; i < longitudMaxima; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * arrayClonado.length);
+        const elementoAleatorio = arrayClonado[indiceAleatorio];
+
+        arrayAleatorio.push(elementoAleatorio);
+        arrayClonado.splice(indiceAleatorio, 1);
+    }
+    return arrayAleatorio;
 }
 
 function crearCasilla(emoji) {
