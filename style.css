@@ -118,3 +118,10 @@ section{
 .casilla.girada .casilla__vuelta {
     transform: rotateY(0deg) rotateZ(0);
 }
+
+.match {
+    -webkit-animation: blink-1 1s both;
+    animation: blink-1 1s both;
+    /*se utiliza para proporcionar un efecto de parpadeo al elemento*/
+    animation-delay: 0.5s;
+}
