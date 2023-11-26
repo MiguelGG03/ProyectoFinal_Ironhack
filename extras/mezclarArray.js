@@ -12,4 +12,5 @@ export function mezclarArray(array) {
         // array[i] es el elemento que está en la posición i
     }
 
+    return array;
 }
