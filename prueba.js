@@ -7,18 +7,22 @@ import {emojiBanderas} from './emojiBanderas.js'
 
 const empezarBtn = document.querySelector('.empezar-boton')
 const plantilla = document.querySelector('#plantilla-casilla')
-const tabla = document.querySelector('.tabla')
+const tablero = document.querySelector('.tabla')
 
 const fargmento = document.createDocumentFragment()
 
 empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
+    crearTablero()
+}
+
+function crearTablero() {
     emojiBanderas.forEach((emoji) => {
-        const casilla = crearCasilla(emoji);
-        fargmento.append(casilla);
+        const casilla = crearCasilla(emoji)
+        fargmento.append(casilla)
     })
-    tabla.append(fargmento)
+    tablero.append(fargmento)
 }
 
 function crearCasilla({id, emoticono}) {
