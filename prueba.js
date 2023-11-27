@@ -8,7 +8,7 @@ import {emojisJuego} from './emojisJuego.js'
 const empezarBtn = document.querySelector('.empezar-boton');
 const plantilla = document.querySelector('#plantilla-casilla');
 const tablero = document.querySelector('.tabla');
-const puntuacionTabla = document.querySelector('.puntuacion-elemento__tabla-puntuacion');
+const elementoPuntuacion = document.querySelector('.puntuacion-elemento__tabla-puntuacion');
 
 const casillasGiradas = [];
 let puntuacion = 0;
@@ -77,6 +77,8 @@ function revisarMatch() {
             casilla.classList.add('match');
         });
         (casillasGiradas.length = 0);
+        puntuacion = puntuacion + 3;
+        elementoPuntuacion.textContent = puntuacion;
     }
     else {
         setTimeout(() => {
@@ -85,5 +87,7 @@ function revisarMatch() {
             });
             (casillasGiradas.length = 0);
         }, 1000);
+        puntuacion = puntuacion - 1;
+        elementoPuntuacion.textContent = puntuacion;
     }
 }
