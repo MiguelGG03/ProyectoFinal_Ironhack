@@ -78,6 +78,5 @@ function girarCasilla(evento) {
                 } ,1000);
             }
         }
-        
     }
 }
