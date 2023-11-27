@@ -19,18 +19,7 @@ function empezarJuego() {
 }
 
 function crearTablero() {
-    const arrayCopia = [...emojisJuego];
-    const arrayMezclado = [];
-
-    for (let i = 0; i < 8; i++) {
-        const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length);
-        const elementoAleatorio = arrayCopia[indiceAleatorio];
-
-        arrayMezclado.push(elementoAleatorio);
-        arrayCopia.splice(indiceAleatorio, 1);
-    }
-
-    const arrayMezcladoConParjas = [...arrayMezclado, ...arrayMezclado];
+    const arrayMezcladoConParjas = crearArrayRandomDesdeOtro()
 
     const arrayFinal = mezclarArray(arrayMezcladoConParjas);
 
@@ -41,6 +30,22 @@ function crearTablero() {
         fargmento.append(casilla);
     })
     tablero.append(fargmento);
+}
+
+function crearArrayRandomDesdeOtro() {
+    const arrayCopia = [...emojisJuego]
+    const arrayMezclado = []
+
+    for (let i = 0; i < 8; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length)
+        const elementoAleatorio = arrayCopia[indiceAleatorio]
+
+        arrayMezclado.push(elementoAleatorio)
+        arrayCopia.splice(indiceAleatorio, 1)
+    }
+
+    const arrayMezcladoConParjas = [...arrayMezclado, ...arrayMezclado]
+    return arrayMezcladoConParjas
 }
 
 function crearCasilla({id, emoticono}) {
