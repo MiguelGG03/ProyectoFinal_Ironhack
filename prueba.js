@@ -14,8 +14,9 @@ const fargmento = document.createDocumentFragment()
 empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
-    const id = emojiBanderas[0].id;
-    const emoticono = emojiBanderas[0].emoticono;
+    emojiBanderas.forEach((emoji) => {
+        crearTabla(emoji.id, emoji.emoticono)
+    })
 
     const casilla = crearCasilla(id, emoticono)
 
