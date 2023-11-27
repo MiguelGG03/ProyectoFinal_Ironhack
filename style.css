@@ -139,6 +139,11 @@ section{
     padding:2rem;
 }
 
+.finalizar-visualizacion p {
+    text-align:center;
+    font-size:3rem;
+}
+
 
 /* ANIMACIONES */
 
