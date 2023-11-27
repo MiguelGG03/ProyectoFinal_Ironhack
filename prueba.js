@@ -9,9 +9,11 @@ const empezarBtn = document.querySelector('.empezar-boton');
 const plantilla = document.querySelector('#plantilla-casilla');
 const tablero = document.querySelector('.tabla');
 const elementoPuntuacion = document.querySelector('.puntuacion-elemento__tabla-puntuacion');
+const elementoTiempo = document.querySelector('.tiempo-elemento__tabla-puntuacion');
 
 const casillasGiradas = [];
 let puntuacion = 0;
+let tiempoTotal = 0;
 
 const fargmento = document.createDocumentFragment();
 
