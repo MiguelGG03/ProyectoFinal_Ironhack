@@ -5,13 +5,14 @@ import {emojisJuego} from './emojisJuego.js'
 * SELECTORES DEL DOM
 */
 
-const empezarBtn = document.querySelector('.empezar-boton')
-const plantilla = document.querySelector('#plantilla-casilla')
-const tablero = document.querySelector('.tabla')
+const empezarBtn = document.querySelector('.empezar-boton');
+const plantilla = document.querySelector('#plantilla-casilla');
+const tablero = document.querySelector('.tabla');
 
-const fargmento = document.createDocumentFragment()
+const fargmento = document.createDocumentFragment();
 
-empezarBtn.addEventListener('click', empezarJuego)
+empezarBtn.addEventListener('click', empezarJuego);
+tablero.addEventListener('click', girarCasilla);
 
 function empezarJuego() {
     tablero.innerHTML = '';
