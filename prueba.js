@@ -22,7 +22,7 @@ function crearTablero() {
     const arrayCopia = [...emojiBanderas];
     const arrayMezclado = [];
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 8; i++) {
         const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length);
         const elementoAleatorio = arrayCopia[indiceAleatorio];
 
@@ -30,7 +30,9 @@ function crearTablero() {
         arrayCopia.splice(indiceAleatorio, 1);
     }
 
-    console.log(arrayMezclado);
+    const arrayMezcladoConParjas = [...arrayMezclado, ...arrayMezclado];
+    
+    console.log(arrayMezcladoConParjas);
 
     emojiBanderas.forEach((emoji) => {
         const casilla = crearCasilla(emoji);
