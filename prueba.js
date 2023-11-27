@@ -91,3 +91,4 @@ function revisarMatch() {
         elementoPuntuacion.textContent = puntuacion;
     }
 }
+
