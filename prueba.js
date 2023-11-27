@@ -23,8 +23,8 @@ tablero.addEventListener('click', girarCasilla);
 
 function empezarJuego() {
     tablero.innerHTML = '';
-    crearTablero()
-
+    clearInterval(tiempoIntervalo);
+    crearTablero();
     tiempoIntervalo = setInterval(actualizarTiempo, 1000);
 }
 
