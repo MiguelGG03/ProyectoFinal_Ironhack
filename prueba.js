@@ -19,9 +19,9 @@ function empezarJuego() {
 }
 
 function crearTablero() {
-    const arrayMezcladoConParjas = crearArrayRandomDesdeOtro()
+    const arrayAleatorio = crearArrayRandomDesdeOtro()
 
-    const arrayFinal = mezclarArray(arrayMezcladoConParjas);
+    const arrayFinal = mezclarArray(arrayAleatorio);
 
     console.log(arrayFinal);
 
@@ -32,20 +32,20 @@ function crearTablero() {
     tablero.append(fargmento);
 }
 
-function crearArrayRandomDesdeOtro() {
-    const arrayCopia = [...emojisJuego]
-    const arrayMezclado = []
+function crearArrayRandomDesdeOtro(arrayCopiar , numeroDeElementos = 8) {
+    const arrayCopia = [...arrayCopiar];
+    const arrayMezclado = [];
 
-    for (let i = 0; i < 8; i++) {
-        const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length)
-        const elementoAleatorio = arrayCopia[indiceAleatorio]
+    for (let i = 0; i < numeroDeElementos; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length);
+        const elementoAleatorio = arrayCopia[indiceAleatorio];
 
-        arrayMezclado.push(elementoAleatorio)
-        arrayCopia.splice(indiceAleatorio, 1)
+        arrayMezclado.push(elementoAleatorio);
+        arrayCopia.splice(indiceAleatorio, 1);
     }
 
-    const arrayMezcladoConParjas = [...arrayMezclado, ...arrayMezclado]
-    return arrayMezcladoConParjas
+    const arrayAleatorio = [...arrayMezclado, ...arrayMezclado];
+    return arrayAleatorio;
 }
 
 function crearCasilla({id, emoticono}) {
