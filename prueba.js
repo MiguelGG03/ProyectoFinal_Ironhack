@@ -17,10 +17,15 @@ function empezarJuego() {
     const id = emojiBanderas[0].id;
     const emoticono = emojiBanderas[0].emoticono;
 
-    const casilla = plantilla.content.cloneNode(true);
-    casilla.querySelector('.casilla').dataset.identity = id;
-    casilla.querySelector('.casilla__vuelta').textContent = emoticono;
+    const casilla = crearCasilla(id, emoticono)
 
     fargmento.append(casilla);
     tabla.append(fargmento)
+}
+
+function crearCasilla(id, emoticono) {
+    const casilla = plantilla.content.cloneNode(true);
+    casilla.querySelector('.casilla').dataset.identity = id;
+    casilla.querySelector('.casilla__vuelta').textContent = emoticono;
+    return casilla;
 }
