@@ -22,10 +22,18 @@ empezarBtn.addEventListener('click', empezarJuego);
 tablero.addEventListener('click', girarCasilla);
 
 function empezarJuego() {
-    tablero.innerHTML = '';
-    clearInterval(tiempoIntervalo);
+    reiniciarPartida();
     crearTablero();
     tiempoIntervalo = setInterval(actualizarTiempo, 1000);
+}
+
+function reiniciarPartida() {
+    tablero.innerHTML = '';
+    clearInterval(tiempoIntervalo);
+    tiempoTotal = 0;
+    elementoTiempo.textContent = tiempoTotal;
+    puntuacion = 0;
+    elementoPuntuacion.textContent = puntuacion;
 }
 
 function crearTablero() {
