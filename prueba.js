@@ -1,5 +1,5 @@
 import {mezclarArray} from './extras/mezclarArray.js'
-import {emojiBanderas} from './emojiBanderas.js'
+import {emojisJuego} from './emojisJuego.js'
 
 /*
 * SELECTORES DEL DOM
@@ -19,7 +19,7 @@ function empezarJuego() {
 }
 
 function crearTablero() {
-    const arrayCopia = [...emojiBanderas];
+    const arrayCopia = [...emojisJuego];
     const arrayMezclado = [];
 
     for (let i = 0; i < 8; i++) {
@@ -34,7 +34,7 @@ function crearTablero() {
     
     console.log(arrayMezcladoConParjas);
 
-    emojiBanderas.forEach((emoji) => {
+    emojisJuego.forEach((emoji) => {
         const casilla = crearCasilla(emoji);
         fargmento.append(casilla);
     })
