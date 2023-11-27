@@ -53,3 +53,4 @@ function crearCasilla({id, emoticono}) {
     casilla.querySelector('.casilla__vuelta').textContent = emoticono;
     return casilla;
 }
+
