@@ -19,6 +19,17 @@ function empezarJuego() {
 }
 
 function crearTablero() {
+    const arrayCopia = [...emojiBanderas];
+    const arrayMezclado = [];
+
+    for (let i = 0; i < 16; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * arrayCopia.length);
+        const elementoAleatorio = arrayCopia[indiceAleatorio];
+
+        arrayMezclado.push(elementoAleatorio);
+        arrayCopia.splice(indiceAleatorio, 1);
+    }
+
     emojiBanderas.forEach((emoji) => {
         const casilla = crearCasilla(emoji);
         fargmento.append(casilla);
