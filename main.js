@@ -112,7 +112,26 @@ function finalizarSiNoMasMatches() {
 }
 
 function revisarCoincidencia() {
-    null;
+    const [primeraCasilla, segundaCasilla] = casillasGiradas.map(
+        (casilla) => casilla.dataset.identity
+    );
+
+    if (primeraCasilla === segundaCasilla) {
+        casillasGiradas.forEach((casilla) => {
+            casilla.classList.add('match')
+        });
+        casillasGiradas.length = 0;
+        actualizarContadorPuntuacion(1);
+    }
+    else {
+        setTimeout( () => {
+            casillasGiradas.forEach((casilla) => {
+                casilla.classList.remove('girada');
+            });
+            casillasGiradas.length = 0;
+        }, 1000);
+        actualizarContadorPuntuacion(-1);
+    }
 }
 
 
