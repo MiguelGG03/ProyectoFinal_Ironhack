@@ -8,8 +8,10 @@ import {emojisJuego} from './emojisJuego.js'
 const empezarBtn = document.querySelector('.empezar-boton');
 const plantilla = document.querySelector('#plantilla-casilla');
 const tablero = document.querySelector('.tabla');
+const puntuacionTabla = document.querySelector('.puntuacion-elemento__tabla-puntuacion');
 
 const casillasGiradas = [];
+let puntuacion = 0;
 
 const fargmento = document.createDocumentFragment();
 
