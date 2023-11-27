@@ -62,6 +62,9 @@ function girarCasilla(evento) {
     if (casilla && casillasGiradas.length < 2) {
         casilla.classList.add('girada');
         casillasGiradas.push(casilla);
+        if (casillasGiradas.length === 2) {
+            console.log('hay dos casillas giradas');
+        }
         
     }
 }
