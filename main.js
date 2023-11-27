@@ -140,7 +140,11 @@ if (primeraCasilla === segundaCasilla) {
     // Decrementa la puntuación en 1
     actualizarContadorPuntuacion(-1);
 }
+}
 
+function actualizarContadorPuntuacion(puntuacion){
+    elementoPuntuacion.textContent = puntuacionContador+=puntuacion;
+}
 
 
 function match() {
@@ -149,9 +153,7 @@ function match() {
 
 
 
-function actualizarContadorPuntuacion(puntuacion){
-    elementoPuntuacion.textContent = puntuacionContador+=puntuacion;
-}
+
 
 function actualizarTiempo(){
     tiempoTotal++;
