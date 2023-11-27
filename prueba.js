@@ -69,7 +69,8 @@ function girarCasilla(evento) {
 }
 
 function revisarMatch() {
-    if (casillasGiradas[0].dataset.identity === casillasGiradas[1].dataset.identity) {
+    const [casilla1, casilla2] = casillasGiradas.map((casilla) => casilla.dataset.identity);
+    if (casilla1 === casilla2) {
         casillasGiradas.forEach((casilla) => {
             casilla.classList.add('match');
         });
