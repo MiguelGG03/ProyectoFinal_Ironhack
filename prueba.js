@@ -9,6 +9,8 @@ const empezarBtn = document.querySelector('.empezar-boton');
 const plantilla = document.querySelector('#plantilla-casilla');
 const tablero = document.querySelector('.tabla');
 
+const casillasGiradas = [];
+
 const fargmento = document.createDocumentFragment();
 
 empezarBtn.addEventListener('click', empezarJuego);
