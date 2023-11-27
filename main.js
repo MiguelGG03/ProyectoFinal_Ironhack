@@ -112,27 +112,35 @@ function finalizarSiNoMasMatches() {
 }
 
 function revisarCoincidencia() {
-    const [primeraCasilla, segundaCasilla] = casillasGiradas.map(
-        (casilla) => casilla.dataset.identity
-    );
+// Extrae las identidades de las dos casillas giradas del array casillasGiradas
+const [primeraCasilla, segundaCasilla] = casillasGiradas.map(
+    (casilla) => casilla.dataset.identity
+);
 
-    if (primeraCasilla === segundaCasilla) {
+// Compara las identidades de las dos casillas giradas
+if (primeraCasilla === segundaCasilla) {
+    // Si las identidades son iguales, las marca como 'match'
+    casillasGiradas.forEach((casilla) => {
+        casilla.classList.add('match');
+    });
+    // Limpia el array casillasGiradas
+    casillasGiradas.length = 0;
+    // Incrementa la puntuación en 1
+    actualizarContadorPuntuacion(1);
+} else {
+    // Si las identidades no son iguales, se ejecuta después de 1000ms (1 segundo)
+    setTimeout(() => {
+        // Voltea las casillas nuevamente (elimina la clase 'girada')
         casillasGiradas.forEach((casilla) => {
-            casilla.classList.add('match')
+            casilla.classList.remove('girada');
         });
+        // Limpia el array casillasGiradas
         casillasGiradas.length = 0;
-        actualizarContadorPuntuacion(1);
-    }
-    else {
-        setTimeout( () => {
-            casillasGiradas.forEach((casilla) => {
-                casilla.classList.remove('girada');
-            });
-            casillasGiradas.length = 0;
-        }, 1000);
-        actualizarContadorPuntuacion(-1);
-    }
+    }, 1000);
+    // Decrementa la puntuación en 1
+    actualizarContadorPuntuacion(-1);
 }
+
 
 
 function match() {
