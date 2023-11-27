@@ -14,15 +14,16 @@ const fargmento = document.createDocumentFragment()
 empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
+    tablero.innerHTML = '';
     crearTablero()
 }
 
 function crearTablero() {
     emojiBanderas.forEach((emoji) => {
-        const casilla = crearCasilla(emoji)
-        fargmento.append(casilla)
+        const casilla = crearCasilla(emoji);
+        fargmento.append(casilla);
     })
-    tablero.append(fargmento)
+    tablero.append(fargmento);
 }
 
 function crearCasilla({id, emoticono}) {
