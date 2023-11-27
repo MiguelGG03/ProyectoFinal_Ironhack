@@ -15,12 +15,9 @@ empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
     emojiBanderas.forEach((emoji) => {
-        crearTabla(emoji)
+        const casilla = crearCasilla(emoji);
+        fargmento.append(casilla);
     })
-
-    const casilla = crearCasilla(id, emoticono)
-
-    fargmento.append(casilla);
     tabla.append(fargmento)
 }
 
