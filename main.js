@@ -147,14 +147,6 @@ function actualizarContadorPuntuacion(puntuacion){
 }
 
 
-function match() {
-    null;
-}
-
-
-
-
-
 function actualizarTiempo(){
     tiempoTotal++;
     elementoTiempo.textContent = tiempoTotal;
