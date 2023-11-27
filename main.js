@@ -24,7 +24,7 @@ tabla.addEventListener('click', /*Aqui va la funcion para girar las casillas*/);
 function iniciarJuego() {
     reiniciarJuego();
     crearTabla();
-    intervaloTiempo = setInterval(actualizarTiempo , 1000);
+    tiempoTotal = setInterval(actualizarTiempo , 1000);
     /*establece un temporizador para llamar a la función actualizarTiempo cada segundo. */
 }
 
@@ -87,13 +87,17 @@ function girarCasilla(evento) {
 
         if (casillasGiradas.length === 2) {
             revisarCoincidencia();
-            finalizarSiNoCoincide();
+            finalizarSiNoMasMatches();
         }
     }
 }
 
-function finalizarSiNoCoincide() {
+function finalizarSiNoMasMatches() {
     const numeroDeMatches = board.querySelectorAll('.match').length;
+    if (numeroDeMatches === 16) {
+        finalizarVisualizacion.classList.remove('hide');
+        clearInterval(tiempoTotal);
+    }
 }
 
 function revisarCoincidencia() {
