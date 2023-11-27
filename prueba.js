@@ -14,6 +14,7 @@ const elementoTiempo = document.querySelector('.tiempo-elemento__tabla-puntuacio
 const casillasGiradas = [];
 let puntuacion = 0;
 let tiempoTotal = 0;
+let tiempoIntervalo = null;
 
 const fargmento = document.createDocumentFragment();
 
@@ -24,7 +25,7 @@ function empezarJuego() {
     tablero.innerHTML = '';
     crearTablero()
 
-    setInterval(actualizarTiempo, 1000);
+    tiempoIntervalo = setInterval(actualizarTiempo, 1000);
 }
 
 function crearTablero() {
