@@ -59,8 +59,9 @@ function crearCasilla({id, emoticono}) {
 
 function girarCasilla(evento) {
     const casilla = evento.target.closest('.casilla');
-    if (casilla) {
+    if (casilla && casillasGiradas.length < 2) {
         casilla.classList.add('girada');
+        casillasGiradas.push(casilla);
         
     }
 }
