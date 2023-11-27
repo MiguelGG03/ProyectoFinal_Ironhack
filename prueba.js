@@ -6,6 +6,11 @@ import {emojiBanderas} from './emojiBanderas.js'
 */
 
 const empezarBtn = document.querySelector('.empezar-boton')
+const plantilla = document.querySelector('#plantilla-casilla')
+const tabla = document.querySelector('.tabla')
+
+const fargmento = document.createDocumentFragment()
+
 empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
