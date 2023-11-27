@@ -96,4 +96,7 @@ function revisarMatch() {
     }
 }
 
-
+function actualizarTiempo() {
+    tiempoTotal = tiempoTotal + 1;
+    elementoTiempo.textContent = tiempoTotal;
+}
