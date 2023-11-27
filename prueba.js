@@ -31,8 +31,10 @@ function crearTablero() {
     }
 
     const arrayMezcladoConParjas = [...arrayMezclado, ...arrayMezclado];
-    
-    console.log(arrayMezcladoConParjas);
+
+    const arrayFinal = mezclarArray(arrayMezcladoConParjas);
+
+    console.log(arrayFinal);
 
     emojisJuego.forEach((emoji) => {
         const casilla = crearCasilla(emoji);
