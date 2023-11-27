@@ -94,7 +94,6 @@ function acabarSiNoMasMatches() {
     }
 }
 
-
 function revisarMatch() {
     const [casilla1, casilla2] = casillasGiradas.map((casilla) => casilla.dataset.identity);
     if (casilla1 === casilla2) {
