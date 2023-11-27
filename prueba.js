@@ -30,6 +30,8 @@ function crearTablero() {
         arrayCopia.splice(indiceAleatorio, 1);
     }
 
+    console.log(arrayMezclado);
+
     emojiBanderas.forEach((emoji) => {
         const casilla = crearCasilla(emoji);
         fargmento.append(casilla);
