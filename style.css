@@ -149,6 +149,9 @@ section{
     font-size: 3rem;
 }
 
+.finalizar-visualizacion.hide {
+    display:none;
+}
 
 /* ANIMACIONES */
 
