@@ -149,7 +149,7 @@ section{
     font-size: 3rem;
 }
 
-.finalizar-visualizacion.hide {
+.finalizar-visualizacion.ocultar {
     display:none;
 }
 
