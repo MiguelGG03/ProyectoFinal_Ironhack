@@ -10,6 +10,7 @@ const plantilla = document.querySelector('#plantilla-casilla');
 const tablero = document.querySelector('.tabla');
 const elementoPuntuacion = document.querySelector('.puntuacion-elemento__tabla-puntuacion');
 const elementoTiempo = document.querySelector('.tiempo-elemento__tabla-puntuacion');
+const finalizarVisualizacion = document.querySelector('.finalizar-visualizacion');
 
 const casillasGiradas = [];
 let puntuacion = 0;
