@@ -80,6 +80,10 @@ function girarCasilla(evento) {
         casillasGiradas.push(casilla);
         if (casillasGiradas.length === 2) {
             revisarMatch();
+            const numeroDeParejas = tablero.querySelectorAll('.match').length;
+            if (numeroDeParejas === 16) {
+                finalizarVisualizacion.classList.remove('ocultar');
+            }
         }
     }
 }
