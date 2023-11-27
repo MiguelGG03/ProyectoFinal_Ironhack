@@ -1,5 +1,5 @@
 import {emojiBanderas} from './emojiBanderas.js';
-import {mezclarArray} from '-/extras/mezclarArray.js';
+import {mezclarArray} from './extras/mezclarArray.js';
 
 /*
 SELECTORES DOM
