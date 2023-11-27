@@ -15,7 +15,7 @@ empezarBtn.addEventListener('click', empezarJuego)
 
 function empezarJuego() {
     emojiBanderas.forEach((emoji) => {
-        crearTabla(emoji.id, emoji.emoticono)
+        crearTabla(emoji)
     })
 
     const casilla = crearCasilla(id, emoticono)
@@ -24,7 +24,7 @@ function empezarJuego() {
     tabla.append(fargmento)
 }
 
-function crearCasilla(id, emoticono) {
+function crearCasilla({id, emoticono}) {
     const casilla = plantilla.content.cloneNode(true);
     casilla.querySelector('.casilla').dataset.identity = id;
     casilla.querySelector('.casilla__vuelta').textContent = emoticono;
