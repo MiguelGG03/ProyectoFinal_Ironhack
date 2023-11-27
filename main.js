@@ -65,17 +65,13 @@ function crearArrayAleatorioDesdeOtro(arrayACopiar, longitudMaxima = 8) {
     for (let i = 0; i < longitudMaxima; i++) {
         // Genera un índice aleatorio dentro del rango actual de arrayClonado.
         const indiceAleatorio = Math.floor(Math.random() * arrayClonado.length);
-    
         // Obtiene el elemento correspondiente al índice aleatorio.
         const elementoAleatorio = arrayClonado[indiceAleatorio];
-    
         // Agrega el elemento aleatorio a arrayAleatorio.
         arrayAleatorio.push(elementoAleatorio);
-    
         // Elimina el elemento seleccionado del arrayClonado.
         arrayClonado.splice(indiceAleatorio, 1);
     }
-
     /* Este bucle realiza una operación de muestreo aleatorio sin reemplazo.
     Recorre un bucle desde 0 hasta longitudMaxima (exclusivo).
     En cada iteración, elige aleatoriamente un índice dentro del rango actual de arrayClonado.
