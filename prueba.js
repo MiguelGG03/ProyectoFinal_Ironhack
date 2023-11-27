@@ -35,6 +35,7 @@ function reiniciarPartida() {
     elementoTiempo.textContent = tiempoTotal;
     puntuacion = 0;
     elementoPuntuacion.textContent = puntuacion;
+    finalizarVisualizacion.classList.add('ocultar');
 }
 
 function crearTablero() {
