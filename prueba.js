@@ -63,7 +63,20 @@ function girarCasilla(evento) {
         casilla.classList.add('girada');
         casillasGiradas.push(casilla);
         if (casillasGiradas.length === 2) {
-            console.log('hay dos casillas giradas');
+            if (casillasGiradas[0].dataset.identity === casillasGiradas[1].dataset.identity) {
+                casillasGiradas.forEach((casilla) => {
+                    casilla.classList.add('match');
+                });
+            (casillasGiradas.length = 0);
+            }
+            else{
+                setTimeout(() => {
+                    casillasGiradas.forEach((casilla) => {
+                        casilla.classList.remove('girada');
+                    });
+                    (casillasGiradas.length = 0);
+                } ,1000);
+            }
         }
         
     }
