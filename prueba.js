@@ -90,6 +90,7 @@ function acabarSiNoMasMatches() {
     const numeroDeParejas = tablero.querySelectorAll('.match').length;
     if (numeroDeParejas === 16) {
         finalizarVisualizacion.classList.remove('ocultar');
+        clearInterval(tiempoIntervalo);
     }
 }
 
