@@ -23,6 +23,8 @@ tablero.addEventListener('click', girarCasilla);
 function empezarJuego() {
     tablero.innerHTML = '';
     crearTablero()
+
+    setInterval(actualizarTiempo, 1000);
 }
 
 function crearTablero() {
@@ -93,4 +95,5 @@ function revisarMatch() {
         elementoPuntuacion.textContent = puntuacion;
     }
 }
+
 
