@@ -126,6 +126,16 @@ section{
     animation-delay: 0.5s;
 }
 
+.finalizar-visualizacion {
+    background-color: rgb(27, 27, 133);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:100;
+}
+
 
 /* ANIMACIONES */
 
