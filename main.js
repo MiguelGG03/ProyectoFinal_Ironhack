@@ -101,6 +101,9 @@ function girarCasilla(evento) {
 }
 
 function finalizarSiNoMasMatches() {
+    /*verifica si hay exactamente 16 elementos en el documento con la clase "match".
+    Si es así, realiza algunas acciones, como mostrar un elemento con el ID 
+    "finalizarVisualizacion" y detener un temporizador.*/
     const numeroDeMatches = board.querySelectorAll('.match').length;
     if (numeroDeMatches === 16) {
         finalizarVisualizacion.classList.remove('hide');
