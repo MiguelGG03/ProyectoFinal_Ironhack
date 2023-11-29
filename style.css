@@ -30,6 +30,26 @@ section{
   align-items: center;;
 }
 
+.instrucciones {
+    display: flex;
+    padding: 2rem 1rem;
+    border: 3px solid #eee;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.instrucciones h2 {
+    font-size: 2rem;
+    color: #eee;
+    
+}
+
+.instrucciones p {
+    font-size: 1.25rem;
+    color: #eee;
+    margin:0 1rem;
+}
+
 .empezar-boton{
     background-color: #641aa5;
     color: #eee;
